@@ -94,7 +94,6 @@ img {
 .textDate {
     display: flex;
     justify-content: center;
-    
 }
 
 hr{
@@ -129,6 +128,7 @@ button:hover {
 
     body {
         width: 500px;
+        margin: 0 auto;
     }
 
     .container {
@@ -137,13 +137,10 @@ button:hover {
         padding-right: 70px;
     }
 
-    .result {
-        margin-left: 30px;
-    }
-
+    
     .textDate {
-        width: 200px;
-        font-size: 60px;
+        width: 430px;
+        font-size: 70px;
         line-height: 80px;
     }
 
