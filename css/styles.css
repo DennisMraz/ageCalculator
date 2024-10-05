@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 0 auto;
+    width: 375px;
+    background-color: #f0f0f0;
+    font-family: "Poppins", sans-serif;
+}
+
+.container {
+    background-color: #ffffff;
+    margin-top: 30px;
+    padding: 30px;
+    border-radius: 20px;
+    border-bottom-right-radius: 120px;
+}
+
+.dates {
+    margin-bottom: 35px;
+
+}
+
+.inputs {
+    display: flex;
+    justify-content: space-around;
+}
+
+.labels label {
+    color: hsl(0, 1%, 44%);
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.labels {
+    display: flex;
+    justify-content: space-around;
+}
+
+input {
+    padding: 10px 2px 10px 15px;
+    width: 70px;
+    margin: 10px;
+    border-radius: 7px;
+    border: 1px solid hsl(0, 0%, 86%);
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+
+
+}
+
+.containerButton {
+    position: relative;
+    margin-bottom: 50px;
+}
+
+button {
+    border-radius: 50%;
+    padding: 15px;
+    background-color: #864cff;
+    border: none;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: -25px;
+    /* Ajusta este valor para controlar la posición vertical */
+    left: 50%;
+    transform: translateX(-50%);
+    /* Centra el botón horizontalmente */
+    z-index: 1;
+}
+
+img {
+    width: 25px;
+    /* Ajusta el tamaño según tu icono */
+    height: 25px;
+    cursor: pointer;
+
+}
+
+.result {
+    font-size: 45px;
+    font-weight: 900;
+    font-style: italic;
+    line-height: 50px;
+    
+}
+
+.textDate {
+    display: flex;
+    justify-content: center;
+    
+}
+
+hr{
+    border: none;
+    height: 1px;
+    background-color: hsl(0, 0%, 86%);
+}
+
+
+.textDate #finalYear,
+#finalMonth,
+#finalDay {
+    color: hsl(259, 100%, 65%);
+    margin-right: 8px;
+}
+
+.textDate #finalMonth {
+    margin-left: 50px;
+}
+
+
+
+button:hover {
+    background-color: black;
+}
+
+@media (min-width: 800px) and (max-width: 1440px) {
+    button {
+        left: 100%;
+    }
+
+
+    body {
+        width: 500px;
+    }
+
+    .container {
+
+        width: 600px;
+        padding-right: 70px;
+    }
+
+    .result {
+        margin-left: 30px;
+    }
+
+    .textDate {
+        width: 200px;
+        font-size: 60px;
+        line-height: 80px;
+    }
+
+    .inputs {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .labels label {
+        font-size: 15px;
+    }
+
+    .labels {
+        margin-right: 30px;
+    }
+
+
+
+    input {
+        padding: 15px;
+        width: 100px;
+        font-size: 15px;
+    }
+}
